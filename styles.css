@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(212, 45%, 89%);  
+  --grayishBlue: hsl(216, 15%, 48%);
+  --darkBlue: hsl(218, 44%, 22%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--lightGray);
+}
+.cards_container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.main_container {
+  background-color: var(--white);
+  width: 320px;
+  height: 500px;
+  margin: 60px auto;
+  border-radius: 16px;
+  padding: 16px;
+  transition: 300ms;
+}
+.main_container:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px;
+  transition: 300ms;
+  margin-top: 50px;
+}
+.img_container {
+  background-image: url(./images/image-qr-code.png);
+  width: 100%;
+  height: 288px;
+  background-size: cover;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  animation: upToCenter 300ms none;
+}
+h1 {
+  color: var(--darkBlue);
+  font-size: 23px;
+  text-align: center;
+  margin: 0 15px;
+  margin-bottom: 24px;
+  animation: leftToCenter 500ms none;
+}
+p {
+  font-size: 18px;
+  color: var(--grayishBlue);
+  text-align: center;
+  margin: 0 15px;
+  animation: rightToCenter 500ms none;
+}
+/*********** FOOTER ***********/
+.attribution { 
+  font-size: 15px;
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+/********** ANIMATIONS **********/
+@keyframes upToCenter {
+  0% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes leftToCenter {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rightToCenter {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
