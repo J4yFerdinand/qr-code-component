@@ -48,6 +48,21 @@ Create a screen-centric component that displays a QR code and short descriptive 
  0% { transform: translateY(-500px); }
  100% { transform: translateY(0); }
 }
+@keyframes leftToCenter {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rightToCenter {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 ````
 
 ### Next steps
